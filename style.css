@@ -1,0 +1,124 @@
+body {
+    height: 3500px;
+    margin: 0;
+    padding: 0;
+
+}
+
+@media screen and (max-width:1392px){
+    body {
+        height: 5900px;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+
+.btn {
+    margin: 20px;
+}
+
+.container {
+    background: #999;
+    padding: 30px;
+    margin-top: 200px;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 700px;
+    
+}
+
+
+.port-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #cfcece;
+    margin-top: 200px;
+    padding: 100px;
+    padding-top: 0;
+}
+
+.port-container .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    margin-top: 200px;
+    
+}
+
+.port-container .p-3 {
+    padding: 50px;
+    margin: 20px;
+    margin-right: 0;
+}
+.card {
+    min-width: 300px;
+    margin: 30px;
+    
+}
+
+
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 1300px;
+    justify-content: center;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    margin-top: 30px;
+    background-color: #b1d6b6;
+    width: 30%;
+    padding: 20px;
+    min-width: 400px;
+}
+
+#contact input {
+    background: #fdf5f5;
+    color: rgb(34, 33, 33)    ;
+    border: none;
+}
+
+.footer-container {
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #999;
+}
+
+footer {
+    border-top: 0.1px solid #eceaea;
+}
+
+.footer-left , .footer-right {
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+    transform: translateY(9px);
+}

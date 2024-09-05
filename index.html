@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#port">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 내정보 -->
+    <div class="container" id="About">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white">이름</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-secondary text-white">나이</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-success text-white">소개</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white">임성준</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-secondary text-white">22</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-success text-white">
+            부산사는 22살 임성준 입니다..!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 포트폴리오 -->
+    <div class="port-container" id="port">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white">
+            <div class="card" style="width: 18rem">
+              <img src="google_logo.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">구글</h5>
+                <p class="card-text">구글 사이트를 클론코딩한 프로젝트입니다</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#googleModal"
+                >
+                  자세히 보기
+                </button>
+                <div
+                  class="modal fade"
+                  id="googleModal"
+                  tabindex="-1"
+                  aria-labelledby="googleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="googleModalLabel">
+                          구글 클론코딩
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="화면 캡처 2024-09-05 142017.png"
+                          alt="google-photo"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white">
+            <div class="card" style="width: 18rem">
+              <img src="IG_Glyph_Fill.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">인스타</h5>
+                <p class="card-text">
+                  인스타 사이트를 클론코딩한 프로젝트입니다
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#instaModal"
+                >
+                  자세히 보기
+                </button>
+                <div
+                  class="modal fade"
+                  id="instaModal"
+                  tabindex="-1"
+                  aria-labelledby="instaModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="instaModalLabel">
+                          인스타 클론코딩
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="화면 캡처 2024-09-05 142653.png"
+                          alt="insta-photo"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="p-3 bg-secondary text-white">
+            <div class="card" style="width: 18rem">
+              <img src="pngegg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">에어 비엔비</h5>
+                <p class="card-text">
+                  에어 비엔비 사이트 를 클론코딩한 프로젝트입니다
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bnbModal"
+                >
+                  자세히 보기
+                </button>
+                <div
+                  class="modal fade"
+                  id="bnbModal"
+                  tabindex="-1"
+                  aria-labelledby="bnbModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="bnbModalLabel">
+                          에어비엔비 클론코딩
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="화면 캡처 2024-09-05 143050.png"
+                          alt="bnb-photo"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-secondary text-white">
+            <div class="card" style="width: 18rem">
+              <img src="google_logo.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">구글</h5>
+                <p class="card-text">구글 사이트를 클론코딩한 프로젝트입니다</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#googleModal"
+                >
+                  자세히 보기
+                </button>
+                <div
+                  class="modal fade"
+                  id="googleModal"
+                  tabindex="-1"
+                  aria-labelledby="googleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="googleModalLabel">
+                          구글 클론코딩
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="화면 캡처 2024-09-05 142017.png"
+                          alt="google-photo"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="p-3 bg-success text-white">
+            <div class="card" style="width: 18rem">
+              <img src="google_logo.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">구글</h5>
+                <p class="card-text">구글 사이트를 클론코딩한 프로젝트입니다</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#googleModal"
+                >
+                  자세히 보기
+                </button>
+                <div
+                  class="modal fade"
+                  id="googleModal"
+                  tabindex="-1"
+                  aria-labelledby="googleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="googleModalLabel">
+                          구글 클론코딩
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="화면 캡처 2024-09-05 142017.png"
+                          alt="google-photo"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-success text-white">
+            <div class="card" style="width: 18rem">
+              <img src="google_logo.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">구글</h5>
+                <p class="card-text">구글 사이트를 클론코딩한 프로젝트입니다</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#googleModal"
+                >
+                  자세히 보기
+                </button>
+                <div
+                  class="modal fade"
+                  id="googleModal"
+                  tabindex="-1"
+                  aria-labelledby="googleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="googleModalLabel">
+                          구글 클론코딩
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="화면 캡처 2024-09-05 142017.png"
+                          alt="google-photo"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 연락처 섹션 -->
+    <div class="contact-container">
+      <form id="contact">
+        <div class="mb-3">
+          <label for="exampleInputName1" class="form-label">이름</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputName1"
+            aria-describedby="emailHelp"
+          />
+          <div id="nameHelp" class="form-text">이름을 적어주세요!</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">이메일</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            누구와도 이메일 주소를 공유하지 않으니, 안심하세요! 😎
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">패스워드</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">완료</button>
+      </form>
+    </div>
+
+    <!-- 풋터 -->
+    <footer class="fixed-bottom">
+        <div class="footer-container d-flex">
+            <div class="footer-left d-flex">
+                <p>저작권 정보:</p>
+                <p>sdoagjaprejg</p>
+            </div>
+            <div class="footer-right d-flex">
+                <p>인스타그램:</p>
+                <p>sfasdfjawepf</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
